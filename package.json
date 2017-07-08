@@ -1,0 +1,24 @@
+{
+  "name": "thinmann",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "sass --watch sass/:docs/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeeshaanl/thinmann.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeeshaanl/thinmann/issues"
+  },
+  "homepage": "https://github.com/zeeshaanl/thinmann#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
