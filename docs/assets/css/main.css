@@ -2107,7 +2107,7 @@ input[type="button"],
 /* Goto Next */
 .goto-next {
   border: 0;
-  bottom: 0;
+  bottom: 4em;
   display: block;
   height: 5em;
   left: 50%;
