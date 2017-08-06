@@ -58,7 +58,7 @@ const eventsHandler = function () {
     }
 
     function setImageRotationInterval() {
-        setTimeout(addRemoveClass, 4000)
+        setTimeout(addRemoveClass, 7000)
     }
 
     function addRemoveClass() {
