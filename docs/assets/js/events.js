@@ -50,11 +50,11 @@ const eventsHandler = function () {
                 });
             }
         });
-        $('.rsvp-button').click(function () {
-            $('html,body').animate({
-                scrollTop: $(".inner.medium").offset().top
-            }, 1250);
-        })
+        // $('.rsvp-button').click(function () {
+        //     $('html,body').animate({
+        //         scrollTop: $(".inner.medium").offset().top
+        //     }, 1250);
+        // })
     }
 
     function setImageRotationInterval() {

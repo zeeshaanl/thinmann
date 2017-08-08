@@ -77,10 +77,15 @@ span.meal-label {
   .intro-rsvp .rsvp-button {
     cursor: pointer;
     padding: 10px 55px;
-    border: 1px solid white;
     color: white;
     font-weight: bold;
-    font-size: 16px; }
+    font-size: 16px;
+    border-radius: 5px; }
+  .intro-rsvp a {
+    background-color: darkred;
+    text-decoration: none; }
+  .intro-rsvp a:hover {
+    background-color: #be0000; }
 
 .rsvp-block.content {
   text-align: center;

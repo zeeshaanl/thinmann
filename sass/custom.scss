@@ -98,10 +98,17 @@ span.meal-label {
 	.rsvp-button {
 		cursor: pointer;
 		padding: 10px 55px;
-		border: 1px solid white;
 		color: white;
 		font-weight: bold;
 		font-size: 16px;
+		border-radius: 5px;
+	}
+	a {
+		background-color: darkred;
+		text-decoration: none;
+	}
+	a:hover {
+		background-color: lighten(darkred, 10%);
 	}
 }
 
