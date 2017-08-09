@@ -36,7 +36,7 @@
 }
 
 .intro-img-one {
-	background-image: url("intro1.jpg");
+	//background-image: url("intro1.jpg");
 	z-index: 0;
 	background-size: cover;
 
@@ -50,23 +50,6 @@
 span.meal-label {
 	display: inline-block;
 	min-width: 91px;
-}
-
-.intro-img-two {
-	background-image: url("intro2.jpg");
-	position: absolute;
-	top: 0;
-	width: 100vw;
-	background-size: cover;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	opacity: 0;
-	transition: opacity 1.5s ease-in-out;
-	z-index: 1;
 }
 
 .show-second {
@@ -93,19 +76,35 @@ span.meal-label {
 .intro-rsvp {
 	position: absolute;
 	bottom: 20px;
-	width: 100%;
 	text-align: center;
-	.rsvp-button {
+	width: 100%;
+	.rsvp-button, .instructions {
 		cursor: pointer;
-		padding: 10px 55px;
 		color: white;
 		font-weight: bold;
 		font-size: 16px;
 		border-radius: 5px;
+		padding: 10px;
+	}
+	.instructions {
+		margin-right: 10px;
+		border: 1px solid darken(white, 15%);
+		width: 50px;
+		color: darken(white, 15%);
+		i {
+			margin-left: 3px;
+		}
+	}
+	.instructions:hover {
+		color: white;
+		border: 1px solid white
 	}
 	a {
+		width: 125px;
 		background-color: darkred;
 		text-decoration: none;
+		display: inline-block;
+		text-align: center;
 	}
 	a:hover {
 		background-color: lighten(darkred, 10%);
@@ -203,64 +202,7 @@ span.meal-label {
 }
 
 @media (max-width: 736px) {
-	.intro-img-one, .intro-img-two {
+	.intro-img-one {
 		background-attachment: scroll !important;
-	}
-	.meal-pref {
-		margin: 30px auto 40px !important;
-	}
-}
-
-@media (max-width: 736px) and (orientation: portrait) {
-	.image.desktop .diagonal-images {
-		display: none !important;
-	}
-
-	.rsvp-block.content {
-		padding-bottom: 0 !important;
-	}
-}
-
-@media (orientation: landscape) {
-	.image.mobile {
-		display: none !important;
-	}
-	.image.desktop .diagonal-images {
-		display: block !important;
-	}
-	.diagonal-images {
-		border-top: 1px solid #ebebeb;
-	}
-}
-
-@media (min-width: 737px) {
-	.image.mobile {
-		display: none;
-	}
-	.diagonal-images {
-		border-top: 1px solid #ebebeb;
-	}
-}
-
-@media (max-width: 991px) {
-	#rsvp-form {
-		.rsvp-radio-container {
-			width: 100%;
-			.rsvp-radio {
-				width: 49%;
-			}
-		}
-		.first-name {
-			width: 100%;
-			input {
-				font-size: 18px;
-			}
-		}
-		.select-container {
-			margin-top: 10px;
-		}
-	}
-	.submit-button {
-		width: 54% !important;
 	}
 }

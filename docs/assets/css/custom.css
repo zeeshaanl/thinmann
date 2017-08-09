@@ -27,7 +27,6 @@
   text-align: center; }
 
 .intro-img-one {
-  background-image: url("intro1.jpg");
   z-index: 0;
   background-size: cover;
   /* Create the parallax scrolling effect */
@@ -38,20 +37,6 @@
 span.meal-label {
   display: inline-block;
   min-width: 91px; }
-
-.intro-img-two {
-  background-image: url("intro2.jpg");
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  background-size: cover;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-  z-index: 1; }
 
 .show-second .intro-img-two {
   opacity: 1;
@@ -72,18 +57,31 @@ span.meal-label {
 .intro-rsvp {
   position: absolute;
   bottom: 20px;
-  width: 100%;
-  text-align: center; }
-  .intro-rsvp .rsvp-button {
+  text-align: center;
+  width: 100%; }
+  .intro-rsvp .rsvp-button, .intro-rsvp .instructions {
     cursor: pointer;
-    padding: 10px 55px;
     color: white;
     font-weight: bold;
     font-size: 16px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 10px; }
+  .intro-rsvp .instructions {
+    margin-right: 10px;
+    border: 1px solid #d9d9d9;
+    width: 50px;
+    color: #d9d9d9; }
+    .intro-rsvp .instructions i {
+      margin-left: 3px; }
+  .intro-rsvp .instructions:hover {
+    color: white;
+    border: 1px solid white; }
   .intro-rsvp a {
+    width: 125px;
     background-color: darkred;
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block;
+    text-align: center; }
   .intro-rsvp a:hover {
     background-color: #be0000; }
 
@@ -160,45 +158,7 @@ span.meal-label {
   padding: 1rem 0; }
 
 @media (max-width: 736px) {
-  .intro-img-one, .intro-img-two {
-    background-attachment: scroll !important; }
-
-  .meal-pref {
-    margin: 30px auto 40px !important; } }
-@media (max-width: 736px) and (orientation: portrait) {
-  .image.desktop .diagonal-images {
-    display: none !important; }
-
-  .rsvp-block.content {
-    padding-bottom: 0 !important; } }
-@media (orientation: landscape) {
-  .image.mobile {
-    display: none !important; }
-
-  .image.desktop .diagonal-images {
-    display: block !important; }
-
-  .diagonal-images {
-    border-top: 1px solid #ebebeb; } }
-@media (min-width: 737px) {
-  .image.mobile {
-    display: none; }
-
-  .diagonal-images {
-    border-top: 1px solid #ebebeb; } }
-@media (max-width: 991px) {
-  #rsvp-form .rsvp-radio-container {
-    width: 100%; }
-    #rsvp-form .rsvp-radio-container .rsvp-radio {
-      width: 49%; }
-  #rsvp-form .first-name {
-    width: 100%; }
-    #rsvp-form .first-name input {
-      font-size: 18px; }
-  #rsvp-form .select-container {
-    margin-top: 10px; }
-
-  .submit-button {
-    width: 54% !important; } }
+  .intro-img-one {
+    background-attachment: scroll !important; } }
 
 /*# sourceMappingURL=custom.css.map */

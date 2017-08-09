@@ -6,7 +6,6 @@ const eventsHandler = function () {
     function init() {
         initElements();
         attachListener();
-        setImageRotationInterval();
     }
 
     function initElements() {
@@ -50,20 +49,11 @@ const eventsHandler = function () {
                 });
             }
         });
-        // $('.rsvp-button').click(function () {
-        //     $('html,body').animate({
-        //         scrollTop: $(".inner.medium").offset().top
-        //     }, 1250);
-        // })
-    }
-
-    function setImageRotationInterval() {
-        setTimeout(addRemoveClass, 10000)
-    }
-
-    function addRemoveClass() {
-        handler.imageContainer.hasClass('show-second') ? handler.imageContainer.removeClass('show-second') : handler.imageContainer.addClass('show-second');
-        setImageRotationInterval()
+        $('.instructions').click(function () {
+            $('html,body').animate({
+                scrollTop: $("#user-instructions").offset().top
+            }, 1250);
+        })
     }
 
     return {
