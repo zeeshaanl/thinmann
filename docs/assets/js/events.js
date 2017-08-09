@@ -53,7 +53,16 @@ const eventsHandler = function () {
             $('html,body').animate({
                 scrollTop: $("#user-instructions").offset().top
             }, 1250);
-        })
+        });
+
+        // google analytics events
+        $('.instructions').on('click', function () {
+            ga('send', 'event', 'ViewInstructionsClick');
+        });
+
+        $('.buy-now').on('click', function () {
+            ga('send', 'event', 'BuyNowClick');
+        });
     }
 
     return {
