@@ -113,7 +113,6 @@ span.meal-label {
 
 .rsvp-block.content {
 	text-align: center;
-	padding: 2rem !important;
 }
 
 .rsvp-header {
@@ -201,8 +200,19 @@ span.meal-label {
 	padding: 1rem 0;
 }
 
+.video-block {
+	padding: 4rem 4rem 3rem !important;
+}
+
 @media (max-width: 736px) {
 	.intro-img-one {
 		background-attachment: scroll !important;
+	}
+	.video-block {
+		padding: 4rem 2rem 2rem !important;;
+		.instruction-video {
+			width: 100%;
+			height: 300px;
+		}
 	}
 }
