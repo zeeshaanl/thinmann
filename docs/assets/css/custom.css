@@ -1,6 +1,9 @@
 .intro-content {
   text-align: center; }
 
+.page-title {
+  font-weight: 400; }
+
 .list {
   padding: 6px 1rem; }
   .list td, .list th {
