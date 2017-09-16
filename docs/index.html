@@ -21,7 +21,34 @@
 
         ga('create', 'UA-104336234-1', 'auto');
         ga('send', 'pageview');
-
+    </script>
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      goog_snippet_vars = function() {
+        var w = window;
+        w.google_conversion_id = 862104118;
+        w.google_conversion_label = "aLSfCOPginUQttSKmwM";
+        w.google_remarketing_only = false;
+      };
+      // DO NOT CHANGE THE CODE BELOW.
+      goog_report_conversion = function(url) {
+        goog_snippet_vars();
+        window.google_conversion_format = "3";
+        var opt = new Object();
+        opt.onload_callback = function() {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      var conv_handler = window['google_trackConversion'];
+      if (typeof(conv_handler) == 'function') {
+        conv_handler(opt);
+      }
+    };
+    /* ]]> */
+    </script>
+    <script type="text/javascript"
+      src="//www.googleadservices.com/pagead/conversion_async.js">
     </script>
 </head>
 <body>
@@ -42,7 +69,7 @@
                 </div>
                 <div class="intro-rsvp">
                     <span class="instructions">Anleitungen<i class="fa fa-chevron-down"></i></span>
-                    <a class="rsvp-button buy-now" target="_blank" href="https://www.amazon.de/dp/B074813CMJ?tag=thinmann-kreditkartenetui-21">Jetzt Kaufen</a>
+                    <a onclick="goog_report_conversion()" class="rsvp-button buy-now" target="_blank" href="https://www.amazon.de/dp/B074813CMJ?tag=thinmann-kreditkartenetui-21">Jetzt Kaufen</a>
                 </div>
                 <div style='background-image: url("images/intro1.jpg")' class="intro-img-one intro-img"></div>
             </div>
