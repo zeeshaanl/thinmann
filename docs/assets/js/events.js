@@ -62,6 +62,7 @@ const eventsHandler = function () {
 
         $('.buy-now').on('click', function () {
             ga('send', 'event', 'BuyNowClick');
+            fbq('track', 'Lead');
         });
     }
 
